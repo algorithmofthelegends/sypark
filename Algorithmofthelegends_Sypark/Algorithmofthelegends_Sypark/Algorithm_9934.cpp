@@ -35,8 +35,7 @@ int main(void)
 		for (int j = 0; j < K; j++)
 		{
 			int nSu = pow(2, j + 1);
-			int ntemp = i % nSu;
-			int k = 10;
+
 			if (i % nSu == vHead[j])
 			{
 				nQueue[K-j-1].push(vTemp[i]);
