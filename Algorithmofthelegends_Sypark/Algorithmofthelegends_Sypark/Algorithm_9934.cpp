@@ -11,14 +11,16 @@ int main(void)
 	vector<int> vTemp;;
 	vector<int> vHead;
 	queue<int> nQueue[10];
-	int nCount;
+
+
 	cin >> K;
 	vHead.push_back(0);
+
 	for (int i = 0; i < K; i++)
 	{
 		vHead.push_back(pow(2, i) + vHead[i]);
 	}
-	nCount = pow(2, K) - 1;
+
 	
 	for (int i = 0; i < pow(2, K) - 1; i++)
 	{
